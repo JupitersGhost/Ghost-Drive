@@ -1,3 +1,5 @@
+![Ghost Drive](assets/ghost-drive.jpg)
+
 # Ghost Drive & Nullvalon Tri-Fusion Observatory
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
