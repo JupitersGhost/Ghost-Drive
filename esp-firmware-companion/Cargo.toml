@@ -1,0 +1,31 @@
+[package]
+name = "nullvalon"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+build = "build.rs"
+
+[features]
+default = ["radar-uart"]
+radar-uart = []
+
+[dependencies]
+esp-idf-svc = { version = "0.53.0", features = ["binstart"] }
+esp32-nimble = "=0.13.0"
+sha3 = "0.10"
+hmac = "0.12"
+serde = { version = "1.0", features = ["derive"] }
+postcard = { version = "1.1", features = ["alloc"] }
+log = "0.4"
+
+[build-dependencies]
+embuild = "0.33"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[package.metadata.esp-idf-sys]
+esp_idf_version = "v6.0.3"

@@ -1,0 +1,28 @@
+# Gradle & Android Studio
+.gradle/
+.gradle-local/
+.kotlin/
+.idea/
+local.properties
+**/build/
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Rust / ESP32 build artifacts
+esp-firmware-companion/target/
+esp-firmware-companion/build-logs/
+**/*.rs.bk
+**/*.bin
+**/*.elf
+
+# Python & OS caches
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
